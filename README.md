@@ -5,6 +5,8 @@
 ![LangGraph](https://img.shields.io/badge/orchestration-LangGraph-orange.svg)
 ![Qdrant](https://img.shields.io/badge/vector_db-Qdrant-red.svg)
 
+![alt text](Arquitetura.png)
+
 Uma plataforma avançada de mineração de inteligência sobre o mercado global de commodities energéticas, baseada nos relatórios mensais **MOMR (Monthly Oil Market Report)** da OPEP. Este projeto utiliza uma arquitetura RAG (Retrieval-Augmented Generation) para fornecer análises precisas, citando fontes e tendências extraídas diretamente dos documentos oficiais.
 
 ## 🏗️ Arquitetura do Sistema
