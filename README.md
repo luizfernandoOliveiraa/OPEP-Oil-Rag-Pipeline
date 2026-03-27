@@ -16,9 +16,6 @@ O pipeline é dividido em duas frentes principais:
 1.  **ETL & Ingestão:** Extração de texto de PDFs, mineração de metadados com LLM (Pydantic) e indexação híbrida no Qdrant.
 2.  **RAG Agent (LangGraph):** Um grafo de estados que gerencia a recuperação de contexto e a geração de respostas com uma persona de Consultor Sênior.
 
-![Arquitetura do Projeto](https://github.com/luizfernandoOliveiraa/OPEP-Oil-Rag-Pipeline/blob/main/arquitetura.png?raw=true)
-*(Certifique-se de subir a imagem do Excalidraw como 'arquitetura.png' na raiz do repo)*
-
 ## 🛠️ Stack Tecnológica
 
 - **Linguagem:** Python 3.11+
