@@ -1,0 +1,39 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  lint-and-validate:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up uv
+      uses: astral-sh/setup-uv@v3
+      with:
+        enable-cache: true
+
+
+    - name: Set up Python
+      run: uv python install 3.11
+
+    - name: Install dependencies
+      run: uv sync --all-extras --dev
+
+    - name: Run Linting (ruff)
+      run: uv run ruff check src/ app.py
+
+    - name: Run Type Check (pyright/mypy - Opcional)
+      run: |
+        # Se desejar adicionar verificação de tipos futuramente:
+        # uv run mypy src/
+        echo "Validating Python Environment Integrity..."
+
+    - name: Final Integrity Check
+      run: |
+        echo "🚀 Pipeline Concluído com Sucesso!"

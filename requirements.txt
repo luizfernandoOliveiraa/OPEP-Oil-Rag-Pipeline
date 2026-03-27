@@ -1,0 +1,14 @@
+docling
+langchain
+langchain-google-genai
+langchain-community
+langchain-qdrant
+qdrant-client
+pydantic
+pydantic-settings
+pypdf
+python-dotenv
+langfuse
+langgraph
+streamlit
+fastembed
